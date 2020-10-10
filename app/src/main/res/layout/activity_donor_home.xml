@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".DonorHome">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/logo" />
+
+
+
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint="How much u want?"
+        android:paddingLeft="2dp" />
+
+
+
+
+    <Button
+        android:id="@+id/demand"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#04ea00"
+        android:text="Demand"
+        android:textColor="#ffffff"
+        android:onClick="dmPlay"/>
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:textSize="40sp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"/>
+    <Button
+        android:id="@+id/free"
+        android:layout_width="206dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="#04ea00"
+        android:text="Free Donate"
+        android:textColor="#ffffff"
+        android:onClick="frPlay"/>
+
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contacted Blood Seeker"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/red"/>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="#00000000"
+        android:divider="@drawable/list_divider"
+        android:id="@+id/donar_listview"/>
+
+</LinearLayout>
